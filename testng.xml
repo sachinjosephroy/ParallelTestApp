@@ -8,5 +8,17 @@
   		</classes>
   </test> <!-- ParallelTest1 Browser Chrome -->
   
+  <test thread-count="2" name="ParallelTest1 Browser Firefox" parallel="tests">
+  	<parameter name="myBrowser" value="firefox" />
+  		<classes>
+  			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+  		</classes>
+  </test> <!-- ParallelTest1 Browser Firefox -->
   
+  <test thread-count="2" name="ParallelTest1 Browser Edge" parallel="tests">
+  	<parameter name="myBrowser" value="edge" />
+  		<classes>
+  			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+  		</classes>
+  </test> <!-- ParallelTest1 Browser Edge -->
 </suite> <!-- LoginTest -->

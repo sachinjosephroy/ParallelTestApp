@@ -1,9 +1,15 @@
 package com.paralleltestapp.qa.base;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -24,20 +30,25 @@ public class Testbase {
 	
 	@BeforeTest
 	@Parameters("myBrowser")
-	public void getBrowser(String myBrowser) {
-		String envName = System.getProperty("os.name");
-		System.out.println("Environment Name is: " + envName);
-		if(System.getProperty("os.name").equals("Windows 10")) {
-			if(myBrowser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Selenium Grid\\chromedriver.exe");
-				driver = new ChromeDriver();
-			}
+	public void getBrowser(String myBrowser) throws MalformedURLException {
+		DesiredCapabilities cap = null;
+		if(myBrowser.equalsIgnoreCase("chrome")) {
+			cap = DesiredCapabilities.chrome();
+			cap.setBrowserName(myBrowser);
+			cap.setPlatform(Platform.WINDOWS);
+			driver = new RemoteWebDriver(new URL("http://192.168.1.240:5566/wd/hub"), cap);
 		}
-		else if(System.getProperty("os.name").equals("Windows 7")) {
-			if(myBrowser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Selenium Grid\\chromedriver.exe");
-				driver = new ChromeDriver();
-			}
+		else if(myBrowser.equalsIgnoreCase("firefox")) {
+			cap = DesiredCapabilities.firefox();
+			cap.setBrowserName(myBrowser);
+			cap.setPlatform(Platform.WINDOWS);
+			driver = new RemoteWebDriver(new URL("http://192.168.1.226:5569/wd/hub"), cap);
+		}
+		else if(myBrowser.equalsIgnoreCase("edge")) {
+			cap = DesiredCapabilities.edge();
+			cap.setBrowserName(myBrowser);
+			cap.setPlatform(Platform.WIN10);
+			driver = new RemoteWebDriver(new URL("http://192.168.1.226:5567/wd/hub"), cap);
 		}
 		driver.get("http://freecrm.com/index.html");
 	}
