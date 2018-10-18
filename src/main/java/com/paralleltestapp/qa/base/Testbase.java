@@ -29,8 +29,8 @@ public class Testbase {
 	}
 	
 	@BeforeTest
-	@Parameters({"OS"})
-	public void getBrowser(String OS) throws MalformedURLException {
+	@Parameters({"myBrowser", "OS"})
+	public void getBrowser(String myBrowser, String OS) throws MalformedURLException {
 		DesiredCapabilities cap = null;
 		if(OS.equals("Win7")) {
 			cap = DesiredCapabilities.chrome();
@@ -39,10 +39,18 @@ public class Testbase {
 			driver = new RemoteWebDriver(new URL("http://192.168.1.240:5566/wd/hub"), cap);
 		}
 		else if(OS.equals("Win10")) {
-			cap = DesiredCapabilities.firefox();
-			cap.setBrowserName("firefox");
-			cap.setPlatform(Platform.WINDOWS);
-			driver = new RemoteWebDriver(new URL("http://192.168.1.226:5569/wd/hub"), cap);
+			if(myBrowser.equalsIgnoreCase("firefox")) {
+				cap = DesiredCapabilities.firefox();
+				cap.setBrowserName("firefox");
+				cap.setPlatform(Platform.WINDOWS);
+				driver = new RemoteWebDriver(new URL("http://192.168.1.226:5569/wd/hub"), cap);
+			}
+			else if(myBrowser.equalsIgnoreCase("chrome")) {
+				cap = DesiredCapabilities.chrome();
+				cap.setBrowserName("chrome");
+				cap.setPlatform(Platform.WIN10);
+				driver = new RemoteWebDriver(new URL("http://192.168.1.226:5569/wd/hub"), cap);
+			}
 		}
 		driver.get("http://freecrm.com/index.html");
 	}
