@@ -25,15 +25,6 @@
 	</classes>
   </test> <!-- Win10 Browser Firefox -->
   
-  <test thread-count="2" name="Win10 Browser Chrome" parallel="tests">
-  	<parameters>
-	  	<parameter name="myBrowser" value="chrome" />
-	  	<parameter name="OS" value="Win10" />
-	  	<parameter name="remoteURL" value="http://192.168.1.226:5568/wd/hub" />
-  	</parameters>
-	<classes>
-		<class name="com.paralleltestapp.qa.testcases.LoginPageTests" />
-	</classes>
-  </test> <!-- Win10 Browser Chrome -->
+  
   
 </suite> <!-- LoginTest -->
