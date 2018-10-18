@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite thread-count="2" name="LoginTest" parallel="tests">
+
   <test thread-count="2" name="Win7 Browser Chrome" parallel="tests">
   	<parameters>
 	  	<parameter name="myBrowser" value="chrome" />
@@ -10,7 +11,7 @@
 	<classes>
 		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
 	</classes>
-  </test> <!-- ParallelTest1 Browser Chrome -->
+  </test> <!-- Win7 Browser Chrome -->
   
   <test thread-count="2" name="Win10 Browser Firefox" parallel="tests">
   	
@@ -22,7 +23,7 @@
 	<classes>
 		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
 	</classes>
-  </test> <!-- ParallelTest1 Browser Firefox -->
+  </test> <!-- Win10 Browser Firefox -->
   
   <test thread-count="2" name="Win10 Browser Chrome" parallel="tests">
   	<parameters>
@@ -33,16 +34,6 @@
 	<classes>
 		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
 	</classes>
-  </test> <!-- ParallelTest1 Browser Chrome -->
+  </test> <!-- Win10 Browser Chrome -->
   
-  <test thread-count="2" name="Win7 Browser IE" parallel="tests">
-  	<parameters>
-	  	<parameter name="myBrowser" value="ie" />
-	  	<parameter name="OS" value="Win7" />
-	  	<parameter name="remoteURL" value="http://192.168.1.240:5567/wd/hub" />
-  	</parameters>
-	<classes>
-		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
-	</classes>
-  </test> <!-- ParallelTest1 Browser Chrome -->
 </suite> <!-- LoginTest -->

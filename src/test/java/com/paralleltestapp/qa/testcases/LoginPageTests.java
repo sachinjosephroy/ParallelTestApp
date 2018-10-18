@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.paralleltestapp.qa.base.Testbase;
 
-public class ParallelTest extends Testbase {
+public class LoginPageTests extends Testbase {
 	
 	@Test
 	public void testTitle() {
