@@ -73,12 +73,6 @@ public class Testbase {
 			cap.setPlatform(Platform.WIN10);
 			driver = new RemoteWebDriver(new URL("http://192.168.1.226:5568/wd/hub"), cap);
 		}
-		else if(remoteURL.equals("http://192.168.1.240:5567/wd/hub")) {
-			cap = DesiredCapabilities.internetExplorer();
-			cap.setBrowserName("ie");
-			cap.setPlatform(Platform.WINDOWS);
-			driver = new RemoteWebDriver(new URL("http://192.168.1.240:5567/wd/hub"), cap);
-		}
 		driver.get("http://freecrm.com/index.html");
 	}
 	
