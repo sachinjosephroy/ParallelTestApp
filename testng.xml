@@ -9,7 +9,7 @@
 	  	<parameter name="remoteURL" value="http://192.168.1.240:5566/wd/hub" />
   	</parameters>
 	<classes>
-		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+		<class name="com.paralleltestapp.qa.testcases.LoginPageTests" />
 	</classes>
   </test> <!-- Win7 Browser Chrome -->
   
