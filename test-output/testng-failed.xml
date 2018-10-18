@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [LoginTest]" parallel="tests">
+  <test name="ParallelTest1 Browser Firefox(failed)" parallel="tests">
+    <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="com.paralleltestapp.qa.testcases.ParallelTest">
+        <methods>
+          <include name="testOne"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.paralleltestapp.qa.testcases.ParallelTest -->
+    </classes>
+  </test> <!-- ParallelTest1 Browser Firefox(failed) -->
+</suite> <!-- Failed suite [LoginTest] -->

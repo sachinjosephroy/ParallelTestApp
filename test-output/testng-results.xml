@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LoginTest" duration-ms="26917" started-at="2018-10-18T01:36:43Z" finished-at="2018-10-18T01:37:10Z">
+    <groups>
+    </groups>
+    <test name="ParallelTest1 Browser Chrome" duration-ms="13416" started-at="2018-10-18T01:36:43Z" finished-at="2018-10-18T01:36:56Z">
+      <class name="com.paralleltestapp.qa.testcases.ParallelTest">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@31ef45e3]" name="getBrowser" is-config="true" duration-ms="12207" started-at="2018-10-17T21:36:43Z" finished-at="2018-10-17T21:36:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@31ef45e3]" name="initializePages" is-config="true" duration-ms="63" started-at="2018-10-17T21:36:55Z" finished-at="2018-10-17T21:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testTitle()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@31ef45e3]" name="testTitle" duration-ms="51" started-at="2018-10-17T21:36:55Z" finished-at="2018-10-17T21:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@31ef45e3]" name="closeBrowser" is-config="true" duration-ms="1057" started-at="2018-10-17T21:36:55Z" finished-at="2018-10-17T21:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.paralleltestapp.qa.testcases.ParallelTest -->
+    </test> <!-- ParallelTest1 Browser Chrome -->
+    <test name="ParallelTest1 Browser Edge" duration-ms="5791" started-at="2018-10-18T01:36:56Z" finished-at="2018-10-18T01:37:02Z">
+      <class name="com.paralleltestapp.qa.testcases.ParallelTest">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@25bbe1b6]" name="getBrowser" is-config="true" duration-ms="3382" started-at="2018-10-17T21:36:56Z" finished-at="2018-10-17T21:37:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@25bbe1b6]" name="initializePages" is-config="true" duration-ms="1" started-at="2018-10-17T21:37:00Z" finished-at="2018-10-17T21:37:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testTitle()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@25bbe1b6]" name="testTitle" duration-ms="53" started-at="2018-10-17T21:37:00Z" finished-at="2018-10-17T21:37:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@25bbe1b6]" name="closeBrowser" is-config="true" duration-ms="2337" started-at="2018-10-17T21:37:00Z" finished-at="2018-10-17T21:37:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.paralleltestapp.qa.testcases.ParallelTest -->
+    </test> <!-- ParallelTest1 Browser Edge -->
+    <test name="ParallelTest1 Browser Firefox" duration-ms="26917" started-at="2018-10-18T01:36:43Z" finished-at="2018-10-18T01:37:10Z">
+      <class name="com.paralleltestapp.qa.testcases.ParallelTest">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@5cb9f472]" name="getBrowser" is-config="true" duration-ms="22941" started-at="2018-10-17T21:36:43Z" finished-at="2018-10-17T21:37:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@5cb9f472]" name="initializePages" is-config="true" duration-ms="1" started-at="2018-10-17T21:37:06Z" finished-at="2018-10-17T21:37:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testTitle()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@5cb9f472]" name="testTitle" duration-ms="21" started-at="2018-10-17T21:37:06Z" finished-at="2018-10-17T21:37:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.paralleltestapp.qa.testcases.ParallelTest@5cb9f472]" name="closeBrowser" is-config="true" duration-ms="3942" started-at="2018-10-17T21:37:06Z" finished-at="2018-10-17T21:37:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.paralleltestapp.qa.testcases.ParallelTest -->
+    </test> <!-- ParallelTest1 Browser Firefox -->
+  </suite> <!-- LoginTest -->
+</testng-results>

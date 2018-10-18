@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="LoginTest" parallel="tests">
+  <test thread-count="2" name="ParallelTest1 Browser Chrome" parallel="tests">
+  	<parameter name="myBrowser" value="chrome" />
+  		<classes>
+  			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+  		</classes>
+  </test> <!-- ParallelTest1 Browser Chrome -->
+  
+  <test thread-count="2" name="ParallelTest1 Browser Firefox" parallel="tests">
+  	<parameter name="myBrowser" value="firefox" />
+  		<classes>
+  			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+  		</classes>
+  </test> <!-- ParallelTest1 Browser Firefox -->
+  
+  <test thread-count="2" name="ParallelTest1 Browser Edge" parallel="tests">
+  	<parameter name="myBrowser" value="edge" />
+  		<classes>
+  			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+  		</classes>
+  </test> <!-- ParallelTest1 Browser Edge -->
+</suite> <!-- LoginTest -->
