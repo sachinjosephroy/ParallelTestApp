@@ -41,6 +41,18 @@ public class Testbase {
 				driver = new EdgeDriver();
 			}
 		}
+		else if(System.getProperty("os.name").equals("Windows 7")) {
+			if(myBrowser.equalsIgnoreCase("chrome")) {
+				System.setProperty("webdriver.chrome.driver", "C:\\Selenium Grid\\chromedriver.exe");
+				driver = new ChromeDriver();
+			}
+			else if(myBrowser.equalsIgnoreCase("firefox")) {
+				System.out.println("Windows 7 system does not have firefox browser installed on it");
+			}
+			else if(myBrowser.equalsIgnoreCase("edge")) {
+				System.out.println("Windows 7 system does not have edge browser installed on it");
+			}
+		}
 		driver.get("http://freecrm.com/index.html");
 	}
 	
