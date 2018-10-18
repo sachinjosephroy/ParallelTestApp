@@ -29,16 +29,16 @@ public class Testbase {
 	}
 	
 	@BeforeTest
-	@Parameters("myBrowser")
-	public void getBrowser(String myBrowser) throws MalformedURLException {
+	@Parameters({"myBrowser", "OS"})
+	public void getBrowser(String myBrowser, String OS) throws MalformedURLException {
 		DesiredCapabilities cap = null;
-		if(myBrowser.equalsIgnoreCase("chrome")) {
+		if(myBrowser.equalsIgnoreCase("chrome") && OS.equals("Win7")) {
 			cap = DesiredCapabilities.chrome();
 			cap.setBrowserName(myBrowser);
 			cap.setPlatform(Platform.WINDOWS);
 			driver = new RemoteWebDriver(new URL("http://192.168.1.240:5566/wd/hub"), cap);
 		}
-		else if(myBrowser.equalsIgnoreCase("firefox")) {
+		else if(myBrowser.equalsIgnoreCase("firefox") && OS.equals("Win10")) {
 			cap = DesiredCapabilities.firefox();
 			cap.setBrowserName(myBrowser);
 			cap.setPlatform(Platform.WINDOWS);

@@ -3,6 +3,7 @@
 <suite thread-count="2" name="LoginTest" parallel="tests">
   <test thread-count="2" name="ParallelTest1 Browser Chrome" parallel="tests">
   	<parameter name="myBrowser" value="chrome" />
+  	<parameter name="OS" value="Win10" />
   		<classes>
   			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
   		</classes>
@@ -10,6 +11,7 @@
   
   <test thread-count="2" name="ParallelTest1 Browser Firefox" parallel="tests">
   	<parameter name="myBrowser" value="firefox" />
+  	<parameter name="OS" value="Win7" />
   		<classes>
   			<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
   		</classes>
