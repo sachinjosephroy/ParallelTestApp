@@ -33,8 +33,8 @@ public class Testbase {
 	public ExtentReports extent;
 	public ExtentTest test;
 	
-	String extentReportPath = "C:\\Users\\simir\\eclipse-workspace\\ParallelTestApp\\ExtentReports\\ParallelTestAppReport.html";
-	String extentConfigPath = "C:\\Users\\simir\\eclipse-workspace\\ParallelTestApp\\ExtentReports\\extent-config.xml";
+	String extentReportPath = "C:\\ExtentReports From Win10\\ParallelTestAppReport.html";
+	String extentConfigPath = "C:\\ExtentReports From Win10\\extent-config.xml";
 	
 	@BeforeSuite
 	public void setUpSuite() {
