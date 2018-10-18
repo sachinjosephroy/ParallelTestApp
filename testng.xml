@@ -4,7 +4,7 @@
   <test thread-count="2" name="ParallelTest1 Browser Chrome" parallel="tests">
   	<parameters>
 	  	<parameter name="myBrowser" value="chrome" />
-	  	<parameter name="OS" value="Win10" />
+	  	<parameter name="OS" value="Win7" />
   	</parameters>
 	<classes>
 		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
@@ -15,7 +15,7 @@
   	
   	<parameters>
 	  	<parameter name="myBrowser" value="firefox" />
-	  	<parameter name="OS" value="Win7" />
+	  	<parameter name="OS" value="Win10" />
   	</parameters>
 	<classes>
 		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
