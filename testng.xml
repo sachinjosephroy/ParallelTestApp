@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite thread-count="2" name="LoginTest" parallel="tests">
-  <test thread-count="2" name="ParallelTest1 Browser Chrome" parallel="tests">
+  <test thread-count="2" name="Win7 Browser Chrome" parallel="tests">
   	<parameters>
 	  	<parameter name="myBrowser" value="chrome" />
 	  	<parameter name="OS" value="Win7" />
@@ -12,7 +12,7 @@
 	</classes>
   </test> <!-- ParallelTest1 Browser Chrome -->
   
-  <test thread-count="2" name="ParallelTest1 Browser Firefox" parallel="tests">
+  <test thread-count="2" name="Win10 Browser Firefox" parallel="tests">
   	
   	<parameters>
 	  	<parameter name="myBrowser" value="firefox" />
@@ -24,7 +24,7 @@
 	</classes>
   </test> <!-- ParallelTest1 Browser Firefox -->
   
-  <test thread-count="2" name="ParallelTest1 Browser Chrome" parallel="tests">
+  <test thread-count="2" name="Win10 Browser Chrome" parallel="tests">
   	<parameters>
 	  	<parameter name="myBrowser" value="chrome" />
 	  	<parameter name="OS" value="Win10" />
