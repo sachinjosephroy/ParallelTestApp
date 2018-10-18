@@ -21,7 +21,7 @@
 	  	<parameter name="remoteURL" value="http://192.168.1.226:5569/wd/hub" />
   	</parameters>
 	<classes>
-		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+		<class name="com.paralleltestapp.qa.testcases.LoginPageTests" />
 	</classes>
   </test> <!-- Win10 Browser Firefox -->
   
@@ -32,7 +32,7 @@
 	  	<parameter name="remoteURL" value="http://192.168.1.226:5568/wd/hub" />
   	</parameters>
 	<classes>
-		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+		<class name="com.paralleltestapp.qa.testcases.LoginPageTests" />
 	</classes>
   </test> <!-- Win10 Browser Chrome -->
   
