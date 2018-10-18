@@ -28,10 +28,10 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Testbase {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LoginPage login;
-	public ExtentReports extent;
-	public ExtentTest test;
+	public static ExtentReports extent;
+	public static ExtentTest test;
 	
 	String extentReportPath = "C:\\ExtentReports From Win10\\ParallelTestAppReport.html";
 	String extentConfigPath = "C:\\ExtentReports From Win10\\extent-config.xml";
