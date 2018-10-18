@@ -92,9 +92,7 @@ public class Testbase {
 			test.log(LogStatus.PASS, "Testing passed");
 			extent.endTest(test);
 		}
-		if(driver != null) {
 			driver.quit();
-		}
 	}
 	
 	@AfterSuite
